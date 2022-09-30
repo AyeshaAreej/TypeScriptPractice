@@ -81,5 +81,38 @@ anyType=20;
 anyType=true;
 
 
+// Functions num2 have default parameter value
+function add(num1: number, num2: number=10){
+    return num1+num2;
+}
+console.log(add(2));
+
+
+// Interface
+// This is also possible to make a interface property optional
+// propertyName?:type --> way to create optional property
+interface Person{
+   firstName: string;
+   lastName?:string;
+} 
+
+// function fullName(person:{firstName:string, lastName:string}){
+//    console.log(`${person.firstName} ${person.lastName}`)
+// };
+
+// Instead of above method signature do following
+function fullName(person:Person){
+   console.log(`${person.firstName} ${person.lastName}`)
+};
+
+let p={
+   firstName:'Ayesha',
+   // If lastName is optional then missing lastName will not produce any error
+};
+
+// if properties increases the code will become complex 
+// So typescript provide interfaces for this solution
+// Creating interface of person object and use that interface as a type for a function parameter
+fullName(p);
 
  

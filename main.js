@@ -67,3 +67,24 @@ multiType = 'Ayesha';
 var anyType;
 anyType = 20;
 anyType = true;
+// Functions num2 have default parameter value
+function add(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    return num1 + num2;
+}
+console.log(add(2));
+// function fullName(person:{firstName:string, lastName:string}){
+//    console.log(`${person.firstName} ${person.lastName}`)
+// };
+// Instead of above method signature do following
+function fullName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName));
+}
+;
+var p = {
+    firstName: 'Ayesha'
+};
+// if properties increases the code will become complex 
+// So typescript provide interfaces for this solution
+// Creating interface of person object and use that interface as a type for a function parameter
+fullName(p);
