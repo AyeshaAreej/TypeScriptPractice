@@ -90,7 +90,7 @@ console.log(add(2));
 
 // Interface
 // This is also possible to make a interface property optional
-// propertyName?:type --> way to create optional property
+// propertyName?:type --> way to create optional property inside Interface
 interface Person{
    firstName: string;
    lastName?:string;
@@ -100,7 +100,7 @@ interface Person{
 //    console.log(`${person.firstName} ${person.lastName}`)
 // };
 
-// Instead of above method signature do following
+// Instead of above method signature write following
 function fullName(person:Person){
    console.log(`${person.firstName} ${person.lastName}`)
 };
@@ -141,7 +141,7 @@ class Manager extends Employee {
    console.log(`Manager delegating task`);
   }
 }
-let m1=new Manager('Ayesha');
-m1.delegateWork();
-m1.greet();
-console.log(m1.employeeName);
+// let m1=new Manager('Ayesha');
+// m1.delegateWork();
+// m1.greet();
+// console.log(m1.employeeName);

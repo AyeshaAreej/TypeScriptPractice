@@ -91,7 +91,7 @@ console.log(add(2));
 // function fullName(person:{firstName:string, lastName:string}){
 //    console.log(`${person.firstName} ${person.lastName}`)
 // };
-// Instead of above method signature do following
+// Instead of above method signature write following
 function fullName(person) {
     console.log("".concat(person.firstName, " ").concat(person.lastName));
 }
@@ -128,7 +128,7 @@ var Manager = /** @class */ (function (_super) {
     };
     return Manager;
 }(Employee));
-var m1 = new Manager('Ayesha');
-m1.delegateWork();
-m1.greet();
-console.log(m1.employeeName);
+// let m1=new Manager('Ayesha');
+// m1.delegateWork();
+// m1.greet();
+// console.log(m1.employeeName);
