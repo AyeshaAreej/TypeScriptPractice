@@ -14,7 +14,7 @@ How to run?
 Create file with extension .ts
 Write code
 Go to terminal and write "tsc filenmae.ts"
-Above command will create a file having .js extension having converted typescript code in plain javascript
+This command will create a file having .js extension having converted typescript code in plain javascript
 Now run node filename.js
 The cmd will show the output
 
