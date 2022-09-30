@@ -115,4 +115,33 @@ let p={
 // Creating interface of person object and use that interface as a type for a function parameter
 fullName(p);
 
- 
+//  Classes 
+class Employee{
+  public employeeName:string;
+   
+   constructor(name: string){
+      this.employeeName=name;
+   }
+   greet(){
+      console.log(`Good Morning ${this.employeeName}`);
+   }
+}
+
+// Creating employee class instance
+let emp1=new Employee('Ayesha');
+console.log(emp1.employeeName);
+emp1.greet();
+
+// Inheritance
+class Manager extends Employee {
+  constructor(managerName:string){
+   super(managerName);
+  }
+  delegateWork(){
+   console.log(`Manager delegating task`);
+  }
+}
+let m1=new Manager('Ayesha');
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);
