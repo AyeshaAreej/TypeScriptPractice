@@ -1,7 +1,10 @@
 import './App.css';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 function App() {
 
@@ -34,6 +37,18 @@ function App() {
      <Person name={personName}/>
      {/* Typing an array */}
      <PersonList names={nameList} />
+     {/* Advance props (Conditional Rendering) */}
+     <Status status='success'/>
+     {/* Children props */}
+     <Heading>Placeholder Text</Heading>
+
+     {/* Passing a component as a child to another component */}
+     <Oscar>
+      <Heading>Oscar goes to Leonardo Dicpario!</Heading>
+     </Oscar>
+
+     {/* Optional props */}
+     <Greet name='Ayesha' isLoggedIn={true}/>
     </div>
   );
 }
