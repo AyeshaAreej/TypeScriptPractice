@@ -5,7 +5,7 @@ type AuthUser={
     email:string
 }
 
-export const User=()=>{
+export const MyUser=()=>{
     
    
     //Specifying state type
