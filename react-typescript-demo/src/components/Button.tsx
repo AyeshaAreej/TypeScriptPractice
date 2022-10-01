@@ -1,12 +1,5 @@
 import React from "react"
-
-type ButtonProps ={
-    // If function don't accept any parameter or do not return any thing
-   //handleClick:()=>void
-
-  //When we want an event passed into click handler
-   handleClick:(event:React.MouseEvent<HTMLButtonElement>,id:number) =>void
-}
+import { ButtonProps } from "./Props.types"
 
 export const Button=(props:ButtonProps)=>{
     return (

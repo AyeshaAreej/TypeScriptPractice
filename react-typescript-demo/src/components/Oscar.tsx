@@ -1,9 +1,5 @@
 import React from 'react'
-// Children
-type OscarProps={
-    children:React.ReactNode
-}
-
+import { OscarProps } from './Props.types'
 export const Oscar=(props:OscarProps)=>{
     return(
         <div> 

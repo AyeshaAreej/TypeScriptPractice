@@ -1,10 +1,4 @@
-type GreetProps={
-    name:string,
-    // optional type
-    messageCount?:number,
-    isLoggedIn:boolean   
-     
-}
+import { GreetProps } from "./Props.types";
 //Two benefits 1 intellisense and 2 if assign 10 to name then it will show error before heading to a browser 
 // What to use interfaces or type
 //Answer: 1 Type when building libraries and interfaces when building applications

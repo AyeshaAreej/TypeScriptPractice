@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -55,8 +56,10 @@ function App() {
      {/* Event props  1-Onclick 2-Onchange*/}
      <Button 
         handleClick={(event,id)=>{console.log('Button Clicked', event,id )}}/>
-    <Input value='Ayesha'   handleChange={(event)=>{console.log( event )}}/>
-    </div>
+       <Input value='Ayesha'   handleChange={(event)=>{console.log( event )}}/>
+      
+      <Container styles={{border:'1px solid black', padding:'1rem'}}/>
+    </div> 
   );
 }
 
