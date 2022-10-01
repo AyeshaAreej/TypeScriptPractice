@@ -3,6 +3,7 @@ import {  UserContext } from "./UserContext"
 
 export  const User=()=>{
     const userContext=useContext(UserContext)
+    
   const handleLogin=()=>{
     if(userContext){
         userContext.setUser({

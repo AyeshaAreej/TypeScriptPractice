@@ -15,6 +15,10 @@ import { LoggedIn } from './components/state/LoggedIn';
 import { MyUser } from './components/state/MyUser';
 import {User} from './components/context/User';
 import { Status } from './components/Status';
+import { DomRef } from './components/ref/DomRef';
+import { MyCounter } from './class/MyCounter';
+import { List } from './generic props/List';
+import { RandomNumbers } from './restriction/RandomNumbers';
 
 function App() {
 
@@ -27,14 +31,17 @@ function App() {
   const nameList=[
    
     {
+      id:1,
       first:'Maham',
       last:'Zehra'
     },
     {
+      id:2,
       first:'Muhammad',
       last:'Shazain'
     },
     {
+      id:3,
       first:'Muhammad',
       last:'Khizar'
     },
@@ -69,9 +76,10 @@ function App() {
   
       {/* UseState Hook */}
       <LoggedIn/>
-      <User/>
+      <MyUser/>
       {/* UseReducer Hook */}
       <Counter/>
+
       {/* UseContext Hook */}
       <ThemeContextProvider>
         <Box/>
@@ -79,6 +87,19 @@ function App() {
       <UserContextProvider>
         <User/>
       </UserContextProvider>
+
+      {/* UseRef Hook */}
+      <DomRef/>
+
+      {/* Class Component */}
+      <MyCounter message='Count'/>
+
+      {/* Generic Props */}
+      <List 
+      items={nameList}
+      onClick={(item)=>console.log(item)}/>
+      {/* Restricting Props */}
+      <RandomNumbers value={10} isPositive />
     </div> 
   );
 }
