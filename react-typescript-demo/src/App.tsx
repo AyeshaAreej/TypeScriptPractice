@@ -19,7 +19,9 @@ import { DomRef } from './components/ref/DomRef';
 import { MyCounter } from './class/MyCounter';
 import { List } from './generic props/List';
 import { RandomNumbers } from './restriction/RandomNumbers';
-
+import { Toast } from './template literals/Toast';
+import { CustomButton } from './html/Button';
+import { InputElement } from './html/Input';
 function App() {
 
   // creating object 
@@ -100,6 +102,14 @@ function App() {
       onClick={(item)=>console.log(item)}/>
       {/* Restricting Props */}
       <RandomNumbers value={10} isPositive />
+
+      {/* Template Literals */}
+      <Toast position='left-center'/>
+      {/* Extracting a Component Prop Types */}
+      <CustomButton  variant='primary' onClick={()=>console.log('Clicked')}>
+       Primary Button
+      </CustomButton>
+      <InputElement/>
     </div> 
   );
 }

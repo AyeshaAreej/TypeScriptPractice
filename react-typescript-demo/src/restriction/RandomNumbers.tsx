@@ -18,10 +18,7 @@ type Zero=RandomNumberType &{
 
 }
 
-
 type RandomNumberProps= PositiveNumber | NegativeNumber | Zero
-
-
 
 export const RandomNumbers=({
     value,
