@@ -22,6 +22,7 @@ import { RandomNumbers } from './restriction/RandomNumbers';
 import { Toast } from './template literals/Toast';
 import { CustomButton } from './html/Button';
 import { InputElement } from './html/Input';
+import { CustomComponent } from './html/CustomComponent';
 function App() {
 
   // creating object 
@@ -108,8 +109,10 @@ function App() {
       {/* Extracting a Component Prop Types */}
       <CustomButton  variant='primary' onClick={()=>console.log('Clicked')}>
        Primary Button
-      </CustomButton>
-      <InputElement/>
+       </CustomButton>
+       <InputElement/>
+       {/* Polymorphic Components */}
+       <CustomComponent name='Ayesha Areej' isLoggedIn/>
     </div> 
   );
 }
